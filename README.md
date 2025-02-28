@@ -1,6 +1,7 @@
 # Backend API avec Docker et Kubernetes
 
 Ce projet implémente une API backend simple avec Node.js et PostgreSQL, conteneurisée avec Docker et déployée avec Kubernetes.
+L'API proposée est une application simple de gestion d'items, qui permet de stocker et récupérer des éléments avec un nom et une description dans une base de données.
 
 ## Prérequis
 
@@ -12,8 +13,8 @@ Ce projet implémente une API backend simple avec Node.js et PostgreSQL, contene
 
 1. Clonez ce dépôt:
    ```bash
-   git clone [URL_DE_VOTRE_DEPOT]
-   cd backend-k8s-project
+   git clone https://github.com/tchernodawda/docker-k8s-api.git
+   cd docker-k8s-api
    ```
 
 2. Exécutez l'application avec Docker Compose:
@@ -85,5 +86,5 @@ Ce projet implémente une API backend simple avec Node.js et PostgreSQL, contene
 
 L'image Docker du backend est disponible sur Docker Hub:
 ```
-[VOTRE_ID_DOCKERHUB]/backend:v1.0.0
+tchernodawda/backend:v1.0.0
 ```
