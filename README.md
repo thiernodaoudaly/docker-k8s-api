@@ -6,7 +6,6 @@ L'API proposée est une application simple de gestion d'items, qui permet de sto
 ## Prérequis
 
 - Docker et Docker Compose
-- Kubernetes (minikube pour le développement local)
 - Node.js (pour le développement local)
 
 ## Exécution locale avec Docker Compose
@@ -58,28 +57,6 @@ L'API proposée est une application simple de gestion d'items, qui permet de sto
 4. Démarrez l'application:
    ```bash
    node server.js
-   ```
-
-## Déploiement sur Kubernetes
-
-1. Assurez-vous que minikube est installé et démarré:
-   ```bash
-   minikube start
-   ```
-
-2. Appliquez les manifestes Kubernetes:
-   ```bash
-   kubectl apply -f kubernetes/
-   ```
-
-3. Vérifiez que les pods sont en cours d'exécution:
-   ```bash
-   kubectl get pods
-   ```
-
-4. Pour accéder à l'application, utilisez:
-   ```bash
-   minikube service backend-service
    ```
 
 ## Image Docker
