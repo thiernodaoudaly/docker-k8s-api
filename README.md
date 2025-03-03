@@ -62,24 +62,22 @@ L'API proposée est une application simple de gestion d'items, qui permet de sto
 
 ## Déploiement sur Kubernetes
 
-1. Assurez-vous que minikube est installé et démarré:
+1. Appliquez les manifestes Kubernetes:
    ```bash
-   minikube start
+   kubectl apply -f k8s/
    ```
 
-2. Appliquez les manifestes Kubernetes:
-   ```bash
-   kubectl apply -f kubernetes/
-   ```
-
-3. Vérifiez que les pods sont en cours d'exécution:
+2. Vérifiez que les pods sont en cours d'exécution:
    ```bash
    kubectl get pods
    ```
-
+3. Vérifier les services et ports exposés :
+   ```bash
+   kubectl get services
+   ```
 4. Pour accéder à l'application, utilisez:
    ```bash
-   minikube service backend-service
+   kubectl port-forward svc/backend-service 8080:80
    ```
 
 ## Image Docker
