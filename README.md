@@ -79,6 +79,16 @@ L'API proposée est une application simple de gestion d'items, qui permet de sto
    ```bash
    kubectl port-forward svc/backend-service 8080:80
    ```
+5. Pour recuperer tous les items :
+   ```bash
+   curl http://localhost:8080/items
+   ```
+6. Pour ajouter un nouvel item :
+   ```bash
+   curl -X POST http://localhost:8080/items \
+     -H "Content-Type: application/json" \
+     -d '{"name":"Test Item", "description":"Description de test"}'
+   ```
 
 ## Image Docker
 
