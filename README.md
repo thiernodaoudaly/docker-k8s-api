@@ -64,7 +64,7 @@ L'API proposée est une application simple de gestion d'items, qui permet de sto
 
 1. Appliquez les manifestes Kubernetes:
    ```bash
-   kubectl apply -f k8s/
+   kubectl apply -f kubernetes/
    ```
 
 2. Vérifiez que les pods sont en cours d'exécution:
