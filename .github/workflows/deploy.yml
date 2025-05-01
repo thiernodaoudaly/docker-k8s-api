@@ -28,5 +28,3 @@ jobs:
         uses: railwayapp/cli-action@v3
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-        with:
-          projectPath: .
