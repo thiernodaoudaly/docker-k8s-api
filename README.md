@@ -96,3 +96,20 @@ L'image Docker du backend est disponible sur Docker Hub:
 ```
 tchernodawda/backend:v1.0.0
 ```
+
+## Déploiement continu (CI/CD)
+
+Ce projet utilise **GitHub Actions** pour l'intégration et le déploiement continu.
+
+### Workflows actifs
+
+- **Deploy to Railway** (`.github/workflows/deploy.yml`)  
+  Déploie automatiquement l'application sur [Railway](https://railway.app) à chaque push sur la branche `main`.
+
+### Workflows désactivés
+
+- **Docker Image CI** (`.github/workflows/docker-image.yml`)  
+  Ce workflow construit une image Docker à chaque push, mais il est actuellement désactivé.  
+  Il peut être réactivé pour un futur déploiement via Docker (par exemple vers un container registry ou Kubernetes).
+
+Pour réactiver, modifier la section `on:` du fichier `docker-image.yml`.
