@@ -104,12 +104,6 @@ Ce projet utilise **GitHub Actions** pour l'intégration et le déploiement cont
 ### Workflows actifs
 
 - **Deploy to Railway** (`.github/workflows/deploy.yml`)  
-  Déploie automatiquement l'application sur [Railway](https://railway.app) à chaque push sur la branche `main`.
+Déploie automatiquement l'application sur Railway à chaque push sur la branche main.
+L'app déployée est accessible à l'adresse : https://docker-k8s-api-production.up.railway.app/
 
-### Workflows désactivés
-
-- **Docker Image CI** (`.github/workflows/docker-image.yml`)  
-  Ce workflow construit une image Docker à chaque push, mais il est actuellement désactivé.  
-  Il peut être réactivé pour un futur déploiement via Docker (par exemple vers un container registry ou Kubernetes).
-
-Pour réactiver, modifier la section `on:` du fichier `docker-image.yml`.
