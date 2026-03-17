@@ -320,6 +320,6 @@ docker run -p 3000:3000 \
 
 This project is licensed under the MIT License.
 
-<div align="center">
+<!-- <div align="center">
   Made by <a href="https://github.com/thiernodaoudaly">Thierno Daouda LY</a> · Computer Science & AI Engineering
-</div>
+</div> -->
