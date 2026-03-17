@@ -1,14 +1,19 @@
 {
   "name": "docker-k8s-api",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "REST API with Node.js, Express, and PostgreSQL — containerised with Docker, deployed on Railway and Kubernetes.",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "echo \"No tests yet\" && exit 0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": ["nodejs", "express", "postgresql", "docker", "kubernetes", "railway"],
+  "author": "thierno",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",

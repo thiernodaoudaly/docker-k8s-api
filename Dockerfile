@@ -1,10 +1,10 @@
-FROM node:16-alpine
+FROM node:20-alpine
 
-WORKDIR /docker-k8s-api
+WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm install
+RUN npm ci --omit=dev
 
 COPY . .
 

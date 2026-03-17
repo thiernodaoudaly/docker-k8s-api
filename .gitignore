@@ -1,8 +1,19 @@
+# Dependencies
+node_modules/
+
+# Environment variables (NEVER commit these)
 .env
-env
-/node_modules
-/dist
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
 .DS_Store
-.vscode
-package-lock.json
-package.json
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
